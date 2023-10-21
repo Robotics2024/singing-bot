@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Send the question to the Python script
-        fetch('http://127.0.0.1:8000/handle_question', {
+        fetch('http://127.0.0.1:8000/routing_question', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
