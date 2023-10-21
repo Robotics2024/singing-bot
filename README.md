@@ -20,7 +20,56 @@ Song Generation: The program uses ChatGPT to translate the question into lyrics 
 
 Enjoy and Learn: Users can listen to their custom-made songs, reinforcing their understanding of the topic.
 
+```mermaid
 
+sequenceDiagram
+    actor Neera
+    actor Arianna
+    Neera->>Arianna: what are all the states and territories of the United States?
+    Arianna->>Neera: Nope, let me ask the singing bot
+    Arianna->>Singing_bot: what are all the states and territories of the United States?
+    Singing_bot->>OpenAI: Ask question**
+    OpenAI ->> Singing_bot: Return the song**
+    Singing_bot ->> AnotherAI: here the new lyric for the song frozen, sing it to me 
+    AnotherAI ->> Singing_bot: song.mp3
+    Singing_bot ->> Arianna: play the song
+    Arianna ->> Neera: sing the song
+```
+
+Example of questions: 
+```
+write me the lyric that list all the states and territories of united state the rhyme with the song frozen
+```
+
+Example of answered from the above questions
+```
+(Verse 1)
+The states are wide, a land so great, it's true,
+From Alabama to Wyoming, it's a splendid view.
+California's sun, the New York groove,
+A nation united, there's nothin' we can't prove.
+
+(Chorus)
+Let it flow, let it flow,
+In the U.S. we all know,
+We've got fifty states, and territories too,
+In this land, our dreams come true.
+
+(Verse 2)
+Texas skies, and the Florida sun,
+Alaska's wild, where the bears do run.
+Hawaii's breeze, so gentle and warm,
+Together we weather every storm.
+
+(Chorus)
+Let it flow, let it flow,
+In the U.S. we all know,
+We've got fifty states, and territories too,
+In this land, our dreams come true.
+
+```
+
+    
 ## For Local Developments
 1. run below command to install all dependencies  
 ```
