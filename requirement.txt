@@ -1,0 +1,12 @@
+async-timeout==4.0.3
+Flask== 3.0.0
+Flask-Cors==4.0.0
+gTTS==2.3.2
+importlib-metadata==6.8.0
+MIDIUtil==1.2.1
+multidict==6.0.4
+openai==0.28.1
+pip==23.2.1
+pycparser==2.21
+requests==2.31.0
+setuptools==49.2.1
