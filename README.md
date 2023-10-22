@@ -23,17 +23,17 @@ Enjoy and Learn: Users can listen to their custom-made songs, reinforcing their 
 ```mermaid
 
 sequenceDiagram
-    actor Neera
-    actor Arianna
-    Neera->>Arianna: what are all the states and territories of the United States?
-    Arianna->>Neera: Nope, let me ask the singing bot
-    Arianna->>Singing_bot: what are all the states and territories of the United States?
+    actor Student
+    actor Teacher
+    Student->>Teacher: what are all the states and territories of the United States?
+    Teacher->>Student: Nope, let me ask the singing bot
+    Teacher->>Singing_bot: what are all the states and territories of the United States?
     Singing_bot->>OpenAI: Ask question**
     OpenAI ->> Singing_bot: Return the song**
     Singing_bot ->> AnotherAI: here the new lyric for the song frozen, sing it to me 
     AnotherAI ->> Singing_bot: song.mp3
-    Singing_bot ->> Arianna: play the song
-    Arianna ->> Neera: sing the song
+    Singing_bot ->> Teacher: play the song
+    Teacher ->> Student: sing the song
 ```
 
 Example of questions: 
