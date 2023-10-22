@@ -25,15 +25,15 @@ Enjoy and Learn: Users can listen to their custom-made songs, reinforcing their 
 sequenceDiagram
     actor Student
     actor Teacher
-    Student->>Teacher: what are all the states and territories of the United States?
-    Teacher->>Student: Nope, let me ask the singing bot
-    Teacher->>Singing_bot: what are all the states and territories of the United States?
+    Student->>Teacher: What are all the states and territories of the United States?
+    Teacher->>Student: Let's ask the singing bot to help us engage with and remember the material.
+    Teacher->>Singing_bot: What are all the states and territories of the United States?
     Singing_bot->>OpenAI: Ask question**
     OpenAI ->> Singing_bot: Return the song**
-    Singing_bot ->> AnotherAI: here the new lyric for the song frozen, sing it to me 
+    Singing_bot ->> AnotherAI: Here the new lyrics for the song Frozen, and will you sing it to me?
     AnotherAI ->> Singing_bot: song.mp3
-    Singing_bot ->> Teacher: play the song
-    Teacher ->> Student: sing the song
+    Singing_bot ->> Teacher: Play the song
+    Teacher ->> Student: Sing the song
 ```
 
 Example of questions: 
