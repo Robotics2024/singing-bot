@@ -28,11 +28,11 @@ sequenceDiagram
     Student->>Teacher: What are all the states and territories of the United States?
     Teacher->>Student: Let's ask the singing bot to help us engage with and remember the material.
     Teacher->>Singing_bot: What are all the states and territories of the United States?
-    Singing_bot->>OpenAI: Ask question**
-    OpenAI ->> Singing_bot: Return the song**
-    Singing_bot ->> AnotherAI: Here the new lyrics for the song Frozen, and will you sing it to me?
-    AnotherAI ->> Singing_bot: song.mp3
-    Singing_bot ->> Teacher: Play the song
+    Singing_bot_website->>OpenAI: Ask question**
+    OpenAI ->> Singing_bot_website: Return the song**
+    Singing_bot_website ->> AnotherAI: Here the new lyrics for the song Frozen, and will you sing it to me?
+    AnotherAI ->> Singing_bot_website: song.mp3
+    Singing_bot_website ->> Teacher: Play the song
     Teacher ->> Student: Sing the song
 ```
 
