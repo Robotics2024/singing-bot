@@ -27,7 +27,7 @@ sequenceDiagram
     actor Teacher
     Student->>Teacher: What are all the states and territories of the United States?
     Teacher->>Student: Let's ask the singing bot to help us engage with and remember the material.
-    Teacher->>Singing_bot: What are all the states and territories of the United States?
+    Teacher->>Singing_bot_website: What are all the states and territories of the United States?
     Singing_bot_website->>OpenAI: Ask question**
     OpenAI ->> Singing_bot_website: Return the song**
     Singing_bot_website ->> AnotherAI: Here the new lyrics for the song Frozen, and will you sing it to me?
