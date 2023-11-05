@@ -30,8 +30,8 @@ sequenceDiagram
     Teacher->>Singing_bot_website: What are all the states and territories of the United States?
     Singing_bot_website->>OpenAI: Ask question**
     OpenAI ->> Singing_bot_website: Return the song**
-    Singing_bot_website ->> AnotherAI: Here the new lyrics for the song Frozen, and will you sing it to me?
-    AnotherAI ->> Singing_bot_website: song.mp3
+    Singing_bot_website ->> Voicemod: Here the new lyrics for the song Frozen, and will you sing it to me?
+    Voicemod ->> Singing_bot_website: song.mp3
     Singing_bot_website ->> Teacher: Play the song
     Teacher ->> Student: Sing the song
 ```
